@@ -1,0 +1,250 @@
+*{
+    font-family: "Sofia Sans";
+}
+    body{
+        max-height: 100vh;
+        background:linear-gradient(to right,rgba(229, 233, 239, 0.80),rgba(185, 152, 194, 0.8) );
+        padding: 2%;
+}  
+.biggest{
+    display: grid;
+    max-width: 1440px;
+    max-height: 960px;
+    grid-template-columns: 18% 1fr 1fr 1fr 1fr;
+    gap:0.5vw;
+    margin: auto;
+    border-radius: 5%;
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.8),rgba(218, 227, 234, 0.8));
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-column: 1/2;
+    grid-row: 2/6;
+    padding: 20% 18% 7% 18%;
+}
+.explore{
+    font-size: 3vw;
+    max-height: fit-content;
+}
+.box a{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    font-size: 1.7vw;
+} 
+.asidebox{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    width: 100%;
+}
+.box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box img{
+    width: 20%;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width:100%;
+}
+.bottom img{
+    width:30%;
+}
+.bottom a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.7vw;
+}
+header{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top:2%;
+}
+.logo{
+    width: 7%;
+}
+.logo img{
+    width: 100%;
+    max-width: 100%;
+}
+.head1{
+    display: flex;
+    align-items: center;
+}
+.head2{
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+}
+.head2 a{
+    text-decoration: none;
+    color:black;
+    font-size: 2vw;
+} 
+.headerimg {
+    width: 100%;
+    max-width: 100%;
+}
+.headerimg img{
+    width:80%
+}
+.basket{
+    display:flex;
+    align-items: flex-end;
+}
+input{
+    border: none;
+    background: transparent;
+}
+.mainboxwide{
+    width: 95%;
+}
+.mainboxsmall{
+    width: 91%;
+}
+.imgsmall{
+    width:100%;
+    max-width:100%;
+    border-radius: 5%;
+}
+.imgwide{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5%;
+}
+.mainbox1{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.mainbox2{
+    display: grid;
+    grid-column: 2/4;
+    grid-row:3/4;
+}
+.mainbox3{ 
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+.mainbox4{
+    display: grid;
+    grid-column: 5/6;
+    grid-row: 2/4;
+}
+.mainbox5{ 
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/6;
+}
+.mainbox6{ 
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+.mainbox7{
+    display: grid;
+    grid-column: 4/6;
+    grid-row: 4/5;
+}
+.mainbox8{
+    display: grid;
+    grid-column: 4/6;
+    grid-row: 5/6;
+}
+button{
+    border:none;
+    background:  rgba(244, 240, 240, 0.8);
+}
+input{
+    font-size: 1.7vw;
+}
+@media screen and (max-width: 768px){
+        body{   
+            max-width: 767px;
+        }  
+        .biggest{
+            display: grid;
+            grid-template-columns: 25% 1fr 1fr;
+        }
+        aside {
+            grid-template-columns: 1/2;
+            grid-template-rows: 1/6;
+        }
+        .mainboxwide{
+            width: 95%;
+        }
+        .imgwide{
+            height:95%;
+        }
+        .mainbox1{
+            display: grid;
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        .mainbox2{
+            display: grid;
+            grid-column: 2/4;
+            grid-row:3/4;
+        }
+        .mainboxsmall{ 
+            display: none;
+        }
+        .mainbox7{
+            display: grid;
+            grid-column: 2/4;
+            grid-row: 4/5;
+        }
+        .mainbox8{
+            display: grid;
+            grid-column: 2/4;
+            grid-row: 5/6;
+        }
+}
+@media screen and (max-width: 375px){
+    .logo{
+        display: none;
+    }
+    .biggest{
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+    }
+    aside {
+        display: none;
+    }
+    .mainboxwide{
+        width: 100%;
+    }
+    .mainboxsmall{ 
+        display: none;
+    }
+    .head1{
+        display: none;
+    }
+    .head2{
+        width:100%;
+        padding: 0%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
